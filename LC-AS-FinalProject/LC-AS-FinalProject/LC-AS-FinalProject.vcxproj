@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LC-AS-FinalProject.cpp" />
+    <ClCompile Include="Car_Rental_System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAR_RENTAL_SYSTEM.h" />

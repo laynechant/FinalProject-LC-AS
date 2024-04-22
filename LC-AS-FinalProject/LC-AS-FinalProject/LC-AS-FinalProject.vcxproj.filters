@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LC-AS-FinalProject.cpp">
+    <ClCompile Include="Car_Rental_System.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
