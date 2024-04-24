@@ -6,20 +6,24 @@ SystemManager::SystemManager()
 {
 	
 	fstream fin;
-	
 	fin.open(fileName);
-	while (!fin.eof())
+
+	if (fin.good())
 	{
-		fin >> username >> password;
-		//User* newUser = new User(username, password);
-		//user.push_back(newUser);
+		while (!fin.eof())
+		{
+			fin >> username >> password;
+			User* newUser = new User(username, password);
+			user.push_back(newUser);
+		}
+
+		fin.close();
 	}
-	
-	fin.close();
 }
 
 SystemManager::~SystemManager()
 {
+	
 }
 
 int SystemManager::mainMenu()

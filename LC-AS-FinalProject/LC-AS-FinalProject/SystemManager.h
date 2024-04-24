@@ -18,11 +18,14 @@ public:
 	int adminMenu();
 	void printInfo();
 	
+protected:
+	string username;
+	string password;
+
 private:
 	int num; 
 	int num1;
-	string username;
-	string password; 
+
 	vector<User*> user; 
 	const string fileName = "UserInfo.txt"; 
 };
