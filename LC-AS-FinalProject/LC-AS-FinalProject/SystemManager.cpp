@@ -1,24 +1,13 @@
 #include "SystemManager.h"
-#include "User.h"
+
 
 
 SystemManager::SystemManager()
 {
 	
-	fstream fin;
-	fin.open(fileName);
+	 
+	
 
-	if (fin.good())
-	{
-		while (!fin.eof())
-		{
-			fin >> username >> password;
-			User* newUser = new User(username, password);
-			user.push_back(newUser);
-		}
-
-		fin.close();
-	}
 }
 
 SystemManager::~SystemManager()
@@ -37,7 +26,6 @@ int SystemManager::mainMenu()
 	cout << "6 to Finalize your Invoice " << endl; 
 	cout << "7 to print your current cart info " << endl; 
 	cout << "8 to save your list " << endl; 
-	cout << "9 to load a past shopping list " << endl; 
 	cin >> num;
 	return num; 
 }
@@ -56,10 +44,11 @@ int SystemManager::adminMenu()
 
 void SystemManager::printInfo()
 {
-	for (int i = 0; i < user.size(); i++)
-	{
-		cout << user[i]->getUsername() << endl;
-	}
+	
+	
+}
 
+void SystemManager::setInsurance()
+{
 	
 }

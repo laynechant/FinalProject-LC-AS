@@ -6,7 +6,7 @@
 
 using namespace std; 
 
-class User;
+
 
 class SystemManager
 {
@@ -17,15 +17,12 @@ public:
 	int mainMenu();
 	int adminMenu();
 	void printInfo();
-	
-protected:
-	string username;
-	string password;
+	void setInsurance();
+
 
 private:
 	int num; 
 	int num1;
-
-	vector<User*> user; 
+	string insurance;  
 	const string fileName = "UserInfo.txt"; 
 };

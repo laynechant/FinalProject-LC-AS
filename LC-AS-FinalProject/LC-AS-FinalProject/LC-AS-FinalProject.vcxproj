@@ -131,14 +131,12 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SystemManager.cpp" />
-    <ClCompile Include="User.cpp" />
     <ClCompile Include="Shopper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="SystemManager.h" />
-    <ClInclude Include="User.h" />
     <ClInclude Include="Shopper.h" />
   </ItemGroup>
   <ItemGroup>
